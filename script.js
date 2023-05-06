@@ -1,35 +1,17 @@
-let fontstuff = {
-    pack: {
-        files: [{
-            type: 'plugin',
-            key: 'rexwebfontloaderplugin',
-            url: 'https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/dist/rexwebfontloaderplugin.min.js',
-            start: true
-        }]
-    }
-};
-
 class Logo extends Phaser.Scene {
     constructor() {
-        super(fontstuff);
+        super('Logo');
     }
 
     preload() {
         this.load.path = './assets/';
         this.load.image('logo_img', 'logo2.png');
-        this.plugins.get('rexwebfontloaderplugin').addToScene(this);
-        let config = {
-            google: {
-                families: ['Lexend', 'Nunito', 'Luckiest Guy', 'Impact']
-            }
-        };
-        this.load.rexWebFont(config);
     }
 
     create() {
         let logo = this.add.image(-400, 270, 'logo_img');
         logo.setScale(1.7);
-        let logo_text = this.add.text(600, 350, '4.doller ', {fontFamily: 'Lexend', fontSize: '64px'});
+        let logo_text = this.add.text(600, 350, '4.doller ', {fontFamily: 'Helvetica', fontSize: '64px'});
         logo_text.setShadow(2, 2, '#ff9900', 0)
         
         let logo_tweens = this.tweens.chain({
