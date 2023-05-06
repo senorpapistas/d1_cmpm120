@@ -1,10 +1,10 @@
 # Requirements
 
- - 3+ distinct visual scenes: slides 2, 3, 4
- - 2+ audio assets: slides 2, 3
- - 2+ image assets: 2 fish, edited explosion, fist emoji
- - 2+ geometric shapes: slide 2
- - 1+ big fancy text: slide 1
- - 1+ multi-line text: slide 5
- - 1+ fading scene transition: slides 1, 2, 5
- - 1+ object motion animation: slides 1, 2, 3, 4
+ - 3+ distinct visual scenes: water landscape, fish encounter, menu screen, game starting screen
+ - 2+ audio assets: blubub sound effect and boing sound effect used in the 2 intro scenes (not including logo scene)
+ - 2+ image assets: 2 fish, drawn explosion, fist
+ - 2+ geometric shapes: trees made of rectangles and ominous underwater brick made of a rounded rectangle
+ - 1+ big fancy text: logo
+ - 1+ multi-line text: upon game start, a paragraph of text will appear
+ - 1+ fading scene transition: logo, fish, trees, brick, and menu fade
+ - 1+ object motion animation: fish, trees, brick, and fist move around
