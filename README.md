@@ -1,7 +1,7 @@
 # Fish Puncher 2D
-## by Ewin Mathew
+### by Ewin Mathew
 
-### Requirements
+## Requirements
 
  - 3+ distinct visual scenes: water landscape, fish encounter, menu screen, game starting screen
  - 2+ audio assets: blubub sound effect and boing sound effect used in the 2 intro scenes (not including logo scene)
