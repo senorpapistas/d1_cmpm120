@@ -1,3 +1,6 @@
+## Fish Puncher 2D
+# by Ewin Mathew
+
 # Requirements
 
  - 3+ distinct visual scenes: water landscape, fish encounter, menu screen, game starting screen
