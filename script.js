@@ -192,13 +192,24 @@ class gamestart extends Phaser.Scene {
     update() {}
 }
 
-let config = {
+// using https://www.joshmorony.com/how-to-scale-a-game-for-all-device-sizes-in-phaser/
+/*let config = {
     type: Phaser.AUTO,
     mode: Phaser.Scale.FIT,
-    width: 1280,
-    height: 720,
+    width: window.innerWidth * window.devicePixelRatio,//1280,
+    height: window.innerHeight * window.devicePixelRatio,//720,
     backgroundColor: 0x548bb8,
     scene: [Logo, intro, intro2, menu, gamestart]
-};
+};*/
 
-var game = new Phaser.Game(config);
+var game = new Phaser.Game({
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+        width: 1280,
+        height: 720,
+    },
+
+    backgroundColor: 0x548BB8,
+    scene: [Logo, intro, intro2, menu, gamestart],
+});
